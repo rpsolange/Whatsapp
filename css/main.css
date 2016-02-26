@@ -1,28 +1,30 @@
 *{
 	text-decoration: none;
-	list-style-type: none;
 }
 section{
 	background-color: #DFDFDF;
+	padding: 0% 5% 4%;
 }
 header{
 	background-color: #009688;
 	width: 100%;
-	height: 85px;
+	height: 100px;
+	position: fixed;
 }
-
 /* -- Header Chat - Section -- */
 .chat{
 	position: relative;
-	bottom: 60px;
+	top: 25px;
+	width: 90%;
+	border-bottom: 1px solid #CCCCCC;
 }
 .chat .row:first-child{
 	background-color: #EEEEEE;
 	border: 1px solid #CCCCCC;
 }
 .caja img{
-	width: 45px;
-	height: 45px;
+	width: 42px;
+	height: 42px;
 	border-radius: 50%;
 	margin-top: 8px;
 	margin-bottom: 8px;
@@ -52,7 +54,7 @@ header{
 	margin: 0 ;
 }
 
-/*Chat*/
+/* -- Contactos -- */
 input::-webkit-input-placeholder {
 	font-size: 0.9em;
 }
@@ -80,7 +82,11 @@ input:-ms-input-placeholder {
 	color: gray;
 }
 .relleno{
-	padding: 0 !important;
+	padding: 0;
+}
+.desplazar{
+	height: 580px;
+	overflow: auto;
 }
 .friend{
 	background-color: white;
@@ -101,6 +107,7 @@ input:-ms-input-placeholder {
 	position: relative;
 	top: 10px;
 	color: gray;
+	font-size: 0.9em;
 }
 .texto p:last-child{
 	color: gray;
@@ -110,3 +117,72 @@ input:-ms-input-placeholder {
 	position: relative;
 	top: 12px;
 }
+
+/* -- Chat -- */
+.fondo{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../image/chat-panel-bg.png");
+}
+.white{
+	background-color: white;
+	border-radius: 5px;
+	padding: 1% 2%;
+	width: 300px;
+	font-size: 0.9em;
+	margin-left: 3%;
+	margin-bottom: 3px;
+}
+.fondo .white:first-child{
+	margin-top: 3%;
+}
+.hour{
+	float: right;
+	position: relative;
+	bottom: 12px;
+}
+.hour p, .green p{
+	margin: 0;
+}
+.padre{
+	width: 100%;
+	height: 60px;
+}
+.green{
+	background-color: #DCF8C6;
+	padding: 1% 1.5%;
+	font-size: 0.9em;
+	width: 200px;
+	margin-right: 5%;
+	float: right;
+	clear: both;
+}
+.green p:nth-child(2){
+	float: right;
+	position: relative;
+	bottom: 2px;
+}
+.mensaje{
+	padding: 13px 30px;
+	background-color: #F2F0EE;
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	display: flex;
+}
+.mensaje input{
+	padding: 2%;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+}
+.scroll{
+	height: 572px;
+	overflow: auto;
+}
+.icon-mic, .icon-insert_emoticon{
+	font-size: 1.5em;
+	color: gray;
+	margin: 8px;
+}
+.icon-insert_emoticon{
+	font-size: 1.8em;
