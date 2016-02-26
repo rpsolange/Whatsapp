@@ -1,3 +1,7 @@
+*{
+	text-decoration: none;
+	list-style-type: none;
+}
 section{
 	background-color: #DFDFDF;
 }
@@ -7,53 +11,102 @@ header{
 	height: 85px;
 }
 
-/* -- Chat - Section -- */
-.col-md-4{
-	border: 1px solid #E0E0E0;
+/* -- Header Chat - Section -- */
+.chat{
+	position: relative;
+	bottom: 60px;
 }
-.barra{
+.chat .row:first-child{
 	background-color: #EEEEEE;
-	width: 100%;
-	padding: 2% 4%;
-	border-bottom: 1px solid #E0E0E0;
+	border: 1px solid #CCCCCC;
 }
-.barra img{
-	width: 40px;
+.caja img{
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
-.caja{
+.caja i{
+	color: gray;
+	float: right;
+	margin: auto 2%;
+	position: relative;
+	font-size: 1.2em;
+	top: 20px;
+}
+.right{
+	border-left: 1px solid #CCCCCC;
+}
+.right div{
+	display: inline-block;
+	position: relative;
+	top: 12px;
+	left: 5px;
+}
+.right div p:last-child{
+	color: gray;
+	font-size: 0.9em;
+}
+.right p, .texto p{
+	margin: 0 ;
+}
+
+/*Chat*/
+input::-webkit-input-placeholder {
+	font-size: 0.9em;
+}
+input:-moz-placeholder {
+	font-size: 0.9em; 
+}
+input:-ms-input-placeholder { 
+	font-size: 0.9em; 
+}
+.box{
 	padding: 3.5%;
 	background-color: white;
-	border-bottom: 1px solid #E0E0E0;
+	border: 1px solid #CCCCCC;
 }
-.caja input{
+.box input{
 	border-radius: 5px;
 	border: 1px solid #E0E0E0;
 	padding: 8px 5px 8px 40px;
 	width: 100%;
 }
-.amigos{
-	background-color: white;
-	padding: 2% 4%;
-	display: flex;
-	border-bottom: 1px solid #E0E0E0;
+.box i{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+	color: gray;
 }
-.amigos img{
+.relleno{
+	padding: 0 !important;
+}
+.friend{
+	background-color: white;
+	border: 1px solid #CCCCCC;
+	padding: 2% 3%;
+}
+.friend img{
 	width: 52px;
 	height: 52px;
 	border-radius: 50%;
 	margin-right: 8px;
-	margin-bottom: 0;
 }
-.amigos div p:last-child{
-	font-size: 0.9em;
+.friend img, .texto, .hora{
+	display: inline-block;
+}
+.hora{
+	float: right;
+	position: relative;
+	top: 10px;
 	color: gray;
-	margin-bottom: 0;
 }
-.amigos p:last-child{
-	font-size: 0.9em;
+.texto p:last-child{
 	color: gray;
+	font-size: 0.9em;
 }
-.amigos div{
-	margin-right: 120px;
+.texto{
+	position: relative;
+	top: 12px;
 }
