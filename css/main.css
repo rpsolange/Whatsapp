@@ -107,8 +107,8 @@ input:-ms-input-placeholder {
 	right: 0;
 	color: gray;
 	font-size: 0.9em;
-	padding-right: 18px;
-	padding-top: 10px;
+	margin-right: 10px;
+	top: 14px;
 }
 .texto p:last-child{
 	color: gray;
@@ -119,7 +119,7 @@ input:-ms-input-placeholder {
     text-overflow: ellipsis;
 }
 .texto{
-	position: relative;
+	position: absolute;
 	top: 12px;
 }
 
@@ -209,4 +209,3 @@ input:-ms-input-placeholder {
   border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-
