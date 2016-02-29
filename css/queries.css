@@ -4,16 +4,10 @@
 }
 
 
-@media screen and (max-width:760px) {
-    aside.w-contacts {
+@media screen and (max-width:600px) {
+    .chat .row .col-md-8 {
         display: none;
     }
 }
 
-@media(min-width:1300px) {
-    .container {
-        width: 1321px;
-        padding:0px;
-    }
-}
 
