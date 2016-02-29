@@ -93,6 +93,10 @@ input:-ms-input-placeholder {
 	padding: 2% 3%;
 	position: relative;
 }
+.friend:hover{
+	background-color: #E9EBEB;
+	cursor: pointer;
+}
 .friend img{
 	width: 52px;
 	height: 52px;
